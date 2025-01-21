@@ -1,0 +1,89 @@
+:root {
+    --yellow: #FCB72B;
+    --dark-navy: #495567;
+    --dark-grey: #333A44;
+    --dim-grey: #939CAA;
+    --light-grey: #E5ECF4;
+    --snow: #F2F5F9;
+    --light-yellow: #FFF4DF;
+    --space-mono: "Space Mono";
+}
+
+h1 {
+    font-family: var(--space-mono);
+    font-size: 56px;
+    color: var(--dark-navy);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--space-mono);
+    font-size: 48px;
+    color: var(--dark-navy);
+    font-weight: bold;
+}
+
+h3 {
+    font-family: var(--space-mono);
+    font-size: 40px;
+    color: var(--dark-navy);
+}
+
+h4 {
+    font-family: var(--space-mono);
+    font-size: 24px;
+    color: var(--dark-navy);
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.container1 {
+    height: 650px;
+    background-image: url(../img/Bitmap-4.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container1 .text {
+    width: 77%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container1 .text h1 {
+    width: 535px;
+    margin-bottom: 30px;
+}
+
+.container1 .text p {
+    color: white;
+    width: 400px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+.container1 .text button {
+    margin-left: 100px;
+}
+
+.container1 .yellow_line {
+    position: absolute;
+    top: 350px;
+
+}
+
+.container1 .yellow_arrow {
+    position: absolute;
+    top: 350px;
+    left: 775px;
+}
+
+.container1 .circle_decoration{
+    position: absolute;
+    bottom: 160px;
+    right: 0px;
+}
