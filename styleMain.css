@@ -7,34 +7,30 @@
     --snow: #F2F5F9;
     --light-yellow: #FFF4DF;
     --space-mono: "Space Mono";
-    --lexend-deca: "Lexend Deca"
+    --lexend-deca: "Lexend Deca";
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--space-mono);
+    color: var(--dark-navy);
+    font-weight: bold;
 }
 
 h1 {
-    font-family: var(--space-mono);
     font-size: 56px;
-    color: var(--dark-navy);
-    font-weight: bold;
-    color: white;
+    color: white; /* Spécifique à h1 */
 }
 
 h2 {
-    font-family: var(--space-mono);
     font-size: 48px;
-    color: var(--dark-navy);
-    font-weight: bold;
 }
 
 h3 {
-    font-family: var(--space-mono);
     font-size: 40px;
-    color: var(--dark-navy);
 }
 
 h4 {
-    font-family: var(--space-mono);
     font-size: 24px;
-    color: var(--dark-navy);
 }
 
 p {
