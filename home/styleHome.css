@@ -175,3 +175,13 @@
     position: absolute;
     right: 0px;
 }
+.button {
+    width: 180px;
+    height: 53px;
+    margin-left: auto;
+    font-family: "Space Mono";
+    font-weight: 700;
+    color: white;
+    background-color: var(--yellow);
+    border: none;
+}

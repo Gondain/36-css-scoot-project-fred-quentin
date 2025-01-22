@@ -1,0 +1,82 @@
+@import url(../styleMain.css);
+@media screen and (min-width: 1025px) {
+    .section1 h1 {
+        width: 1110px;
+        margin: 0 auto;
+        height: 200px;
+        color: white;
+        position: relative;
+        top: 72px;
+        font-size: 56px;
+        font-family: "Space Mono";
+        font-weight: 700;
+    }
+
+    .imageSection1 {
+        width: 1425px;
+        height: 200px;
+        position: absolute;
+    }
+
+    .section1 {
+        margin-bottom: 100px;
+    }
+
+    .container3 {
+        width: 77%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 200px;
+        justify-content: space-between;
+    }
+
+    .container3 h2 {
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .container3 p {
+        width: 500px;
+        margin-bottom: 40px;
+    }
+
+    .partie1 {
+        position: relative;
+    }
+
+    .container3 .yellow_arrow {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    .container3 .circle_decoration {
+        position: absolute;
+        right: 0px;
+    }
+
+    .offre {
+        width: 77%;
+        height: 128px;
+        margin: 0 auto;
+        background-color: var(--light-grey);
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .offre_text {
+        margin-left: 30px;
+    }
+
+    .offre .scootButton {
+        margin-right: 30px;
+    }
+
+    .offre .scootButton:hover {
+        background-color: var(--light-grey);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {}

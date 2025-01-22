@@ -1,0 +1,100 @@
+.section1 h1 {
+    width: 77%;
+    margin: 0 auto;
+    height: 200px;
+    color: white;
+    position: relative;
+    top: 72px;
+    font-size: 56px;
+    font-family: "Space Mono";
+    font-weight: 700;
+}
+
+.imageSection1 {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+
+.section1 {
+    margin-bottom: 100px;
+}
+
+.map {
+    width: 77%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.scootButton {
+    width: 180px;
+    height: 53px;
+    margin-left: auto;
+    font-family: "Space Mono";
+    font-weight: 700;
+    color: white;
+    background-color: var(--yellow);
+    border: none;
+}
+
+section .text {
+    width: 77%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 40px;
+}
+
+p {
+    width: 445px;
+}
+
+h2 {
+    width: 350px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    section .text {
+        flex-direction: column;
+    }
+
+    .text .scootButton {
+        margin: 0 auto
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .imageSection1 {
+        height: 160px;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header {
+        gap: 0px
+    }
+
+    header a {
+        margin: 0 auto;
+    }
+
+    .hamburger_menu {
+        display: block;
+    }
+
+    .section .text {
+        flex-direction: column;
+    }
+
+    .text .scootButton {
+        margin: 0 auto
+    }
+}
