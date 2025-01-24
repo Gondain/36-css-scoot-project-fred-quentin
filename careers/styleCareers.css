@@ -1,5 +1,4 @@
 @import url(../styleMain.css);
-@media screen and (min-width: 1025px) {
 
     .baneer {
         height: 200px;
@@ -50,20 +49,50 @@
         margin-bottom: 40px;
     }
 
-    .partie1 {
-        position: relative;
-    }
+.container3 .group2 {
+    display: relative;
+}
 
     .container3 .yellow_arrow {
         position: absolute;
         right: 0px;
-        bottom: 0px;
+        top: 700px;
         z-index: 1;
     }
 
     .container3 .circle_decoration {
         position: absolute;
         right: 0px;
+        top: 400px;
+    }
+
+    .container4 {
+        width: 77%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        display: flex;
+        gap: 25px;
+    }
+
+    .container4 .group {
+        width: 33%;
+    }
+
+    .container4 .group img {
+        margin-bottom: 20px;
+    }
+
+    .container4 .group h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container4 .group p {
+        text-align: center;
+    }
+
+    .join {
+        text-align: center;
     }
 
     .offre {
@@ -74,7 +103,12 @@
         display: flex;
         margin-bottom: 20px;
         align-items: center;
-    }
+        justify-content: space-between;
+        }
+        
+        .offres {
+            margin-bottom: 100px;
+}
 
     .offre_text {
         margin-left: 30px;
@@ -87,6 +121,92 @@
     .offre .scootButton:hover {
         background-color: var(--light-grey);
     }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .offre {
+        width: 90%;
+    }
+
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3 .group1 {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container3 .group1 h2 {
+        text-align: center;
+        margin-top: 35px;
+    }
+    
+    .container3 .group1 p {
+        text-align: center;
+    }
+
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        position: absolute;
+        text-align: center;
+    }
+
+    .offre {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .offre_text {
+        margin-left: 0px;
+    }
+
+    .offre h4 {
+        margin-top: 10px;
+    }
+
+    .offre .scootButton {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .offre p {
+        text-align: center;
+    }
+
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3 .group1 {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container3 .group1 h2 {
+        text-align: center;
+        margin-top: 35px;
+    }
+    
+    .container3 .group1 p {
+        text-align: center;
+    }
+
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
