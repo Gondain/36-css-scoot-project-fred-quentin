@@ -85,7 +85,8 @@ header {
 .baneer_header nav {
     display: flex;
     align-items: center;
-    gap: 70px
+    gap: 70px;
+    margin-right: 60px;
 }
 
 .scootButton {
@@ -150,13 +151,14 @@ header {
 .container1_footer .nav1 .links a img {
     min-width: 130px
 }
-.container1_footer .nav1 .text h2 {
+.container1_footer .nav1 h2 {
     color: white;
+    width: 100%;
 }
 
 .container1_footer .circle_decoration {
     position: absolute;
-    top: 142px;
+    bottom: 0px;
     right: 0px;
     pointer-events: none;
 }
@@ -196,12 +198,110 @@ header {
     gap: 30px;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
 /* -------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .baneer_header {
+        width: 90%;
+    }
+
+    .nav2 {
+        width: 90%;
+    }
+
     .container1_footer .nav1 {
         flex-direction: column;
         gap: 30px;
         justify-content: center;
     }
+
+    .container1_footer .nav1 h2 {
+        width: 100%;
+        text-align: center;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+
+    header ul li {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .baneer_header {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .baneer_header nav {
+        margin-right: 0px;
+        gap: 0px;
+    }
+
+    .nav2 {
+        width: 90%;
+    }
+
+    .container1_footer .nav1 {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .container1_footer .nav1 h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container2_footer {
+        height: 438px;
+    }
+
+    .container2_footer .nav2 .box1 {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .container2_footer .nav2 .box1 a {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container2_footer .nav2 {
+        flex-direction: column;
+    }
+
+    .container2_footer .nav2 .nav-links {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    .container2_footer .nav2 .box2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .baneer .title {
+        display: none;
+    }
+
 }

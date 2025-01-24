@@ -1,25 +1,35 @@
 @import url(../styleMain.css);
 @media screen and (min-width: 1025px) {
-    .section1 h1 {
-        width: 1110px;
-        margin: 0 auto;
-        height: 200px;
-        color: white;
-        position: relative;
-        top: 72px;
-        font-size: 56px;
-        font-family: "Space Mono";
-        font-weight: 700;
-    }
 
-    .imageSection1 {
-        width: 1425px;
+    .baneer {
         height: 200px;
-        position: absolute;
-    }
-
-    .section1 {
+        width: 100%;
+        background-image: url(../img/Bitmap\ \(4\).png);
+        background-size: cover;
+        display: flex;
+        opacity: 40%;
+        align-items: center;
         margin-bottom: 100px;
+    }
+    
+    .filter {
+        background-color: #2F3B59;
+        position: relative;
+    }
+    
+    .title {
+        position: absolute;
+        top: 30%;
+        left: 11.5%;
+        width: 77%;
+        z-index: 1;
+    }
+
+    .circle {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        z-index: 1;
     }
 
     .container3 {

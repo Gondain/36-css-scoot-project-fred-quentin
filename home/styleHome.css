@@ -23,7 +23,7 @@
 
 .container1 .text p {
     color: white;
-    width: 400px;
+    max-width: 400px;
     margin-left: 100px;
     margin-bottom: 40px;
 }
@@ -60,7 +60,6 @@
 
 .container2 .group {
     width: 33%;
-    
 }
 
 .container2 .group img {
@@ -82,8 +81,9 @@
     height: 10px;
     background-color: var(--light-grey);
     position: absolute;
-    left: 0px;
-    top: 45px;
+    /* left: 0px;
+    top: 45px; */
+    top: 990px
 }
 
 .container3 {
@@ -184,4 +184,59 @@
     color: white;
     background-color: var(--yellow);
     border: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container1 .yellow_arrow {
+        display: none;
+    }
+
+    .yellow_line {
+        display: none;
+    }
+
+    .container1 {
+        margin-bottom: 100px;
+    }
+
+    .container1 .text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1 .text h1 {
+        text-align: center;
+    }
+
+    .container1 .text p {
+        margin-left: 0px;
+        text-align: center;
+    } 
+
+    .container1 .text button {
+        margin-left: 0px;
+    }
+
+    .container1 .circle_decoration {
+        bottom: 30px;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .container2 .group {
+        display: flex;
+        width: 100%;
+        gap: 80px
+    }
+
+    .grey {
+        width: 10px;
+        height: 65%;
+        top: 746px;
+        left: 160px;
+    }
+
 }

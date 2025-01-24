@@ -1,35 +1,48 @@
-.section1 h1 {
-    width: 77%;
-    margin: 0 auto;
-    height: 200px;
-    color: white;
-    position: relative;
-    top: 72px;
-    font-size: 56px;
-    font-family: "Space Mono";
-    font-weight: 700;
-}
+/* @import url(../styleMain.css); */
 
-.imageSection1 {
+.baneer {
+    height: 200px;
     width: 100%;
-    height: 200px;
-    position: absolute;
+    background-image: url(../img/Bitmap\ \(4\).png);
+    background-size: cover;
+    display: flex;
+    opacity: 40%;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
 }
 
-.section1 {
-    margin-bottom: 100px;
+.filter {
+    background-color: #2F3B59;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 30%;
+    left: 11.5%;
+    width: 77%;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    z-index: 1;
 }
 
 .map {
     width: 77%;
     margin: 0 auto;
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .scootButton {
-    width: 180px;
+    min-width: 180px;
     height: 53px;
-    margin-left: auto;
     font-family: "Space Mono";
     font-weight: 700;
     color: white;
@@ -42,19 +55,30 @@ section .text {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
+    justify-content: center;
     gap: 40px;
+    margin-bottom: 80px;
 }
 
 p {
-    width: 445px;
+    max-width: 445px;
+    text-align: center;
 }
 
 h2 {
-    width: 350px;
+    text-align: center;
+    max-width: 351px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+.map_phone {
+    display: none;
+}
+
+.country {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     section .text {
         flex-direction: column;
     }
@@ -65,36 +89,44 @@ h2 {
 
 }
 
-@media screen and (max-width: 480px) {
-    .imageSection1 {
-        height: 160px;
+@media screen and (max-width: 768px) {
+    
+    section .text {
+        flex-direction: column;
+        width: 90%;
     }
 
-    header ul li {
+    .title {
+       position:absolute;
+       text-align: center;
+    }
+
+    .map_desktop {
         display: none;
     }
 
-    header button {
-        display: none;
+    .map_phone {
+        display: block;
+        width: 600px;
     }
 
-    header {
-        gap: 0px
+    .map {
+        width: 90%;
     }
 
-    header a {
+    .country {
+        text-align: center;
+        display: block;
+        width: 90%;
         margin: 0 auto;
     }
 
-    .hamburger_menu {
-        display: block;
-    }
-
-    .section .text {
-        flex-direction: column;
-    }
-
-    .text .scootButton {
-        margin: 0 auto
+    .country1 {
+        height: 72px;
+        background-color: #FFF4DF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
 }

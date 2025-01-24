@@ -1,17 +1,144 @@
-.section1 h1 {
-    width: 1110px;
-    margin: 0 auto;
+.baneer {
     height: 200px;
-    color: white;
-    position: relative;
-    top: 72px;
-    font-size: 56px;
-    font-family: "Space Mono";
-    font-weight: 700;
+    width: 100%;
+    background-image: url(../img/Bitmap\ \(4\).png);
+    background-size: cover;
+    display: flex;
+    opacity: 40%;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-.imageSection1 {
-    width: 1425px;
-    height: 200px;
+.filter {
+    background-color: #2F3B59;
+    position: relative;
+}
+
+.title {
     position: absolute;
+    top: 30%;
+    left: 11.5%;
+    width: 77%;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    z-index: 1;
+}
+
+.section1 {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+}
+
+.imgSection1 {
+    position: relative;
+    left: 215px;
+}
+
+.sousSection1 p {
+    width: 110%;
+}
+
+.section2 {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+}
+
+.imgSection2 {
+    position: relative;
+    left: -200px;
+}
+
+.section3 {
+    grid-column: span 3;
+}
+
+.sousSection3 {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.imgSection3 {
+    height: 350px;
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pSection3 {
+    height: 130px;
+    grid-column: span 3;
+    display: flex;
+    gap: 35px;
+}
+
+.pSection3 p {
+    text-align: center;
+}
+
+.section4 {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.titreS4 {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.titreS4 h3 {
+    text-align: start;
+}
+
+.sousSection4 {
+    padding-left: 1em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    background-color: #F2F5F9;
+    ;
+    grid-column: 2 / span 2;
+}
+
+.faq-item summary {
+    list-style-type: none; /* Enlève la flèche par défaut */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligne le texte et la flèche */
+    font-weight: bold;
+}
+
+/* Ajout d'une flèche personnalisée à droite */
+.faq-item summary::after {
+    content: ''; /* Flèche vers le bas */
+    background-image: url("../image/Path\ 3\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px; /* Largeur de la flèche */
+    height: 20px; /* Hauteur de la flèche */
+    margin-right: 10px;
+}
+
+/* Quand l'élément est ouvert, la flèche change pour une flèche vers le haut */
+.faq-item[open] summary::after {
+    background-image: url('../image/Path\ 3.png'); /* Flèche vers le haut */
+}
+
+.titre2S4 h3 {
+    text-align: start;
+}
+
+.sousSection2_4 {
+    padding-left: 1em;
+    padding-bottom: 2em;
+    background-color: #F2F5F9;
+    ;
+    grid-column: 2 / span 2;
 }
